@@ -412,26 +412,18 @@ button:hover {
 /* Media Queries for Small Devices */
 @media (max-width: 450px) {
 
-
     .header__container {
         padding-top: 130px;
         padding-bottom: 100px;
     }
 
-    .header__title {
-        font-size: 24px;
-    }
 
     .header__title>img {
         width: 70%;
     }
 
-    .header__subtitle {
-        font-size: 20px;
-    }
 
     .header__cta {
-        font-size: 14px;
         padding: 6px 12px;
     }
 
@@ -441,21 +433,6 @@ button:hover {
         font-size: 1.5em;
     }
 
-    .menu__title {
-        font-size: 24px;
-    }
-
-    .menu__item-title {
-        font-size: 18px;
-    }
-
-    .menu__item-price {
-        font-size: 16px;
-    }
-
-    .order__title {
-        font-size: 24px;
-    }
 
     .menu__item-image {
         width: 60%;
