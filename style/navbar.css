@@ -1,0 +1,153 @@
+
+:root{
+    --color-1: #9B3615;
+    --color-2: #333;
+    --text-color: #f9f9f9;
+    --accent-color: #FFDE6A;
+}
+
+
+nav{
+    height: 60px;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2em;
+}
+
+.nav-social-liks{
+    display: flex;
+    
+}
+
+.nav-social-liks a:hover{
+background-color: transparent;
+}
+
+.sidebar-social-liks a:hover{
+    background-color: transparent;
+    }
+
+.nav-social-liks img{
+    width: 1.5em;
+}
+
+.links-container{
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.links-container span{
+    color: #7eb48d;
+}
+
+
+nav a{
+    height: 100%;
+    padding: 0 15px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover{
+    color: #f8c55e;
+    box-shadow: -3px 22px 9px -15px  #f8c55e;
+}
+
+nav span:hover{
+    color: #f8c55e;
+}
+
+
+
+nav svg{
+    fill: var(--text-color);
+}
+
+#sidebar-active, .sidebar-social-liks{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
+@media(max-width: 450px){
+    .nav-social-liks{
+        display: none;
+        
+    }
+
+    .sidebar-social-liks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-social-liks img{
+        width: 1.5em;
+    }
+
+    .links-container{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background-color: #333333c7;
+        backdrop-filter: blur(10px);
+        box-shadow: -5px 0 5px #0000006f;
+        transition: 0.75s ease-out;
+    }
+
+    nav .open-sidebar-button{
+        padding-right: 45%;
+    }
+
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .open-sidebar-button, .close-sidebar-button{
+        margin-top: 10px;
+        padding: 20px;
+        display: block;
+    }
+
+    
+    .open-sidebar-button, .close-sidebar-button:hover{
+        cursor: pointer;
+    }
+
+
+#sidebar-active:checked ~ .links-container{
+    right: 0;
+}
+
+ #sidebar-active:checked ~ #overlay{  /* это что бы кликать в стороно и закрывать */
+
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+}
+
