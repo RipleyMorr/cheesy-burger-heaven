@@ -17,7 +17,7 @@ h1, h2, h3, a, buttom{
 
 
 .header {
-    background-image: url("/source/bg/cheespatternsmall3.png");
+    background-image: url("../source/bg/cheespatternsmall3.png");
     background-color: #f8c55e;
     box-shadow: inset -5px 0px 20px 1px #333;
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
@@ -264,7 +264,7 @@ button:hover {
     padding-top: 1em;
     padding-bottom: 2em;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    background-image: url("/source/bg/Pickel.png");
+    background-image: url("../source/bg/Pickel.png");
     background-color: #5b7863;
     box-shadow: inset -5px 0px 20px 1px #3333332e;
     text-align: center;
