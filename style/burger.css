@@ -17,7 +17,7 @@ h1, h2, h3, a, buttom{
 
 
 .header {
-    background-image: url("../source/bg/cheespatternsmall3.png");
+    background-image: url("./source/bg/cheespatternsmall3.png");
     background-color: #f8c55e;
     box-shadow: inset -5px 0px 20px 1px #333;
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
