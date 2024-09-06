@@ -42,6 +42,27 @@ document.getElementById("dropdown-btn").addEventListener("click", function(e) {
       document.querySelectorAll('.navbar__dropdown').forEach(item => item.classList.remove('open'));
     }
   });
+
+  function checkLocation() {
+    const input = document.getElementById('locationInput').value;
+    const resultMessage = document.getElementById('resultMessage');
+  
+    if (input === '') {
+      resultMessage.textContent = "Please enter a location.";
+      return;
+    }
+  
+    // location checking - you can update this to your actual logic
+    const serviceableAreas = ['New York', 'Los Angeles', 'San Francisco', '13403'];
+  
+    if (serviceableAreas.includes(input)) {
+      resultMessage.style.color = '#5b7863';
+      resultMessage.textContent = `Great! We deliver to ${input}.`;
+    } else {
+      resultMessage.style.color = 'red';
+      resultMessage.textContent = `Sorry, we don't deliver to ${input}.`;
+    }
+  }
   
 
   //smooth scrolling
